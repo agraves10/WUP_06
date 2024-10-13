@@ -70,8 +70,12 @@ The ggplot the attitude of the white race is in favor. the black attitudes are t
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-
-
+```{r}
+table2 <- xtabs(~cappun + race, data=mydata)
+rowPerc(table2)
+colPerc(table2)
+```
+In the white group, the ratio of favor to oppose is 65:35, indicating that whites predominantly favor. For Black individuals, the ratio is 43:57, showing more opposition within their race. In the "other" category, the ratio is 55:45, suggesting a slight preference for favoring over opposing. Overall, there is a significantly higher numerical representation of whites compared to the other groups.
 
 
 ## Now with More data
