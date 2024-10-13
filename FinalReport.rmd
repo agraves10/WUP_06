@@ -101,3 +101,8 @@ In the fisherXY test all the p values were diffrent and are all significantly lo
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+The master branch, which analyzes 3,000 variables, indicates that the white group favors capital punishment, while both the black and other groups largely oppose it. In contrast, our graphs from branch 2, which focuses on 821 variables, will differ significantly.One of the most notable differences is in the other group, which shows a higher proportion opposing capital punishment in the master branch. However, in branch 2, this group demonstrates greater support for capital punishment. Additionally, the black group has a 2:1 ratio opposing capital punishment in the master branch, while in branch 2, this ratio shifts to approximately 2:3 in favor.
+
+
+
+
