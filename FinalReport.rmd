@@ -36,10 +36,8 @@ If not, then whose view differs from whom??
 
 ## Descriptive Results
 
-
 ### Graphical Descriptive Results
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
-
 ```{r}
 dd3 <- mydata %>% group_by(cappun,race) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
@@ -57,6 +55,7 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 
 The blacks are in opposion more than the other races. the whites are in favor. the other is close but has a higher opposition count.
 
+
 ## Now with LESS data (more variables give less data due to NA's) create the approate graphic displays to answer the question.
 
 
@@ -66,10 +65,13 @@ The blacks are in opposion more than the other races. the whites are in favor. t
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-
-
-
-
+```{r}
+table2 <- xtabs(~cappun + race, data=mydata)
+rowPerc(table2)
+colPerc(table2)
+```
+Whites show a strong preference for Cappun, with 79.24% favoring it and a significant majority 66.89% opposing other options.Blacks demonstrate a relatively low favorability at 11.43%, with a majority 52.76% opposing it.
+Individuals from other races have a moderate favorability of 9.33%, with 10.47% opposing.whites still favor Cappun strongly 67.75%, while blacks are evenly split with a slight opposition 52.76%. The "other" category leans towards favoring "Cappun" at 61.25%.This data indicates a clear racial divide in support for "Cappun," with whites being the most favorable group, while blacks are more inclined to oppose it.
 
 
 ## Inferential Results
